@@ -30,7 +30,7 @@ pswBtn.addEventListener(`click`, function(){
         pswBtn.innerHTML = `<i class="bi bi-eye"></i>`;
     }
 })
-// ending password
+// ending passwords
 
 // starting bulb
 let bulb = document.querySelector(`#img`);
