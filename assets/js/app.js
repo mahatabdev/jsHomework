@@ -1,3 +1,38 @@
+
+// startin navbar
+let navMenu = document.querySelector(`.navMenu`);
+let navCancel = document.querySelector(`.navCancel`);
+let sidebar = document.querySelector(`.sidebar`);
+let spacer = document.querySelector(`.spacer`);
+
+navMenu.addEventListener(`click`, function(){
+    sidebar.classList.add("active")
+})
+navCancel.addEventListener(`click`, function(){
+    sidebar.classList.remove(`active`)
+})
+spacer.addEventListener(`click`, function(){
+    sidebar.classList.remove(`active`)
+})
+// ending navbar
+
+// starting password
+let pswBtn = document.querySelector(`.pswBtn`);
+let pswInput = document.querySelector(`.pswInput`);
+
+pswBtn.addEventListener(`click`, function(){
+    if(pswInput.type == `password`){
+        pswInput.type = `text`;
+        pswBtn.innerHTML = `<i class="bi bi-eye-slash"></i>`
+    }
+    else{
+        pswInput.type = `password`;
+        pswBtn.innerHTML = `<i class="bi bi-eye"></i>`;
+    }
+})
+// ending password
+
+// starting bulb
 let bulb = document.querySelector(`#img`);
 let onBtn = document.querySelector(`#onBtn`);
 let ofBtn = document.querySelector(`#ofBtn`);
@@ -17,11 +52,9 @@ bulb.addEventListener(`dblclick`, function () {
         bulb.src = "./assets/image/lightof.jpeg"
     }
 })
+// ending bulb
 
-
-
-
-
+// starting ludu
 let dice = document.querySelector(`#dice `);
 dice.addEventListener(`click`, function () {
     let luduResult = Math.ceil(Math.random() * 6);
@@ -34,7 +67,9 @@ ludu.addEventListener(`click`, function () {
     let imgSrc = `assets/image/` + luduResult + `.png`;
     document.querySelector(`#ludu`).src = imgSrc;
 })
+// ending ludu
 
+// startind number checker
 let number = document.getElementById(`input`);
 let result = document.getElementById(`result`)
 // number = Number(number)
@@ -68,6 +103,7 @@ document.getElementById(`btn`).addEventListener
         } 
         else {
             result.innerHTML = `${number.value} this is an neutral number`;
-            result.style.color = "#50575e";
+            result.style.color = "#50kf575e";
         }
     })
+// ending number checker

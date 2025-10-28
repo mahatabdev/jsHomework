@@ -4,16 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bulb</title>
+  <title>Js Practice</title>
   <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+<!-- starting nav-bar -->
+
+<nav>
+        <button class="navMenu"><i class="bi bi-list"></i></button>
+    </nav>
+    <aside class="sidebar">
+        <div class="sidebarCnt">
+            <button class="navCancel"><i class="bi bi-x-octagon"></i></button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+        </div>
+        <div class="spacer"></div>
+    </aside>
+
+    <!-- ending nav-bar -->
+
+    <!-- starting password -->
+
+    <section class="logIn">
+        <div class="wrapper">
+            <input type="password" placeholder="Enter a password" class="pswInput">
+            <button class="pswBtn"><i class="bi bi-eye"></i></button>
+        </div>
+    </section>
+
 
   <section id="practice">
     <div class="container">
       <div class="row">
+    <!-- starting bulb -->
         <div class="light">
           <h2>Bulb switch</h2>
           <img src="./assets/image/lightof.jpeg" alt="" id="img" class="img-fluid">
@@ -21,6 +52,9 @@
           <button id="ofBtn">Of</button>
         </div>
       </div>
+      <!-- ending bulb -->
+
+      <!-- starting ludu -->
       <div class="row">
         <div class="ludu">
           <h2>Ludu</h2>
@@ -30,6 +64,10 @@
           </button>
         </div>
       </div>
+      <!-- ending ludu -->
+
+
+       <!-- starting nmbr checker -->
       <div class="row">
         <div class="input-field">
           <h2>Number Checker</h2>
@@ -38,10 +76,11 @@
           <h3 id="result"></h3>
         </div>
       </div>
+      <!-- ending number checker -->
     </div>
 
 
-
+ <h1 id="country"></h1>
 
   </section>
 
